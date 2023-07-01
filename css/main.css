@@ -1,0 +1,120 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* general */
+:root {
+  --black: #11131e;
+  --gray: #999;
+  --light-gray: #aaa;
+  --brown: #333;
+  --green: #6cf04f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--black);
+}
+
+/* input field and text */
+.container {
+  width: 450px;
+  overflow: hidden;
+  padding: 28px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 10px 25px var(--black);
+}
+
+.container .input-password {
+  height: 65px;
+  width: 100%;
+  position: relative;
+}
+
+.input-password input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 17px;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  border: 1px solid var(--gray);
+}
+
+.input-password i {
+  right: 18px;
+  top: 50%;
+  font-size: 1.2rem;
+  color: var(--gray);
+  cursor: pointer;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.container .content {
+  margin: 20px 0 10px;
+}
+
+/* requirements */
+.content p {
+  color: var(--brown);
+  font-size: 1.3rem;
+}
+
+.content .requirement-list {
+  margin-top: 20px;
+}
+
+.requirement-list li {
+  font-size: 1.3rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.requirement-list li i {
+  width: 20px;
+  color: var(--light-gray);
+}
+
+.requirement-list li.valid i {
+  font-size: 1.2rem;
+  color: var(--green);
+}
+
+.requirement-list li span {
+  margin-left: 12px;
+  color: var(--brown);
+}
+
+.requirement-list li.valid span {
+  color: var(--gray);
+}
+
+/* mobile */
+@media screen and (max-width: 500px){
+  body, .container{
+    padding: 15px;
+  }
+
+  .container .input-password {
+    height: 55px;
+  }
+  .input-password input, .content p {
+    font-size: 1.1rem;
+  }
+  .requirement-list li span {
+    margin-left: 7px;
+  }
+}
