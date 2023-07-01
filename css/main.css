@@ -86,6 +86,7 @@ body {
 .requirement-list li i {
   width: 20px;
   color: var(--light-gray);
+  font-size: 0.6rem;
 }
 
 .requirement-list li.valid i {
@@ -112,6 +113,9 @@ body {
     height: 55px;
   }
   .input-password input, .content p {
+    font-size: 1.1rem;
+  }
+  .input-password i, .requirement-list li {
     font-size: 1.1rem;
   }
   .requirement-list li span {
